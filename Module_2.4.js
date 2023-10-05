@@ -152,44 +152,6 @@ console.log(" ");
 console.log(" ");
 
 
-// 2.4 ARRAYS AND LOOPS - Part Two - Activity Six TEST
-
-console.log("**2.4 ARRAYS AND LOOPS - Part Two - Activity Six TEST**")
-console.log(" ");
-
-let bobsFollowers2 = ["zach", "slater", "screech", "lisa"];
-let hannahsFollowers2 = ["lisa", "kelly", "zach", "slater"];
-let mutualFollowers2 = [];
-
-for (let i = 0; i< bobsFollowers2.length; i++) {
-    if (bobsFollowers2[i] == hannahsFollowers2[0]){
-        mutualFollowers2.push(bobsFollowers2[i]);
-    }
-}
-for (let i = 0; i< bobsFollowers2.length; i++) {
-    if (bobsFollowers2[i] == hannahsFollowers2[1]){
-        mutualFollowers2.push(bobsFollowers2[i]);
-    }
-}
-for (let i = 0; i< bobsFollowers2.length; i++) {
-    if (bobsFollowers2[i] == hannahsFollowers2[2]){
-        mutualFollowers2.push(bobsFollowers2[i]);
-    }
-}
-for (let i = 0; i< bobsFollowers2.length; i++) {
-    if (bobsFollowers2[i] == hannahsFollowers2[3]){
-        mutualFollowers2.push(bobsFollowers2[i]);
-    }
-}
-
-console.log(mutualFollowers2);
-
-
-console.log(" ");
-console.log(" ");
-
-
-
 // 2.4 ARRAYS AND LOOPS - Part Two - Activity Six
 
 console.log("**2.4 ARRAYS AND LOOPS - Part Two - Activity Six**")

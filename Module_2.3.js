@@ -147,14 +147,51 @@ console.log(" ");
 
 
 // 2.3 IF ELSE SWITCH - Activity Six
+console.log("**2.3 IF ELSE SWITCH - Activity Six**")
+console.log(" ");
 
-let time = "7";
-let placeOfWork = "I'm at work";
-let townOfHome = "I'm at home";
+let time = 17;
+let placeOfWork = "Google Headquarters";
+let townOfHome = "My house";
+
+
+if (time >= 8 && time < 9) {
+  console.log(`At ${time}:00 I'm commuting.`);
+} else if (time >= 17 && time < 18) {
+    console.log(`At ${time}:00 I'm commuting.`);
+} else if (time > 9 && time < 17) {
+  console.log(`At ${time}:00 I'm at ${placeOfWork}.`);
+} else {
+  console.log(`At ${time}:00, I'm at ${townOfHome}.`);
+} 
+
+console.log(" ");
+console.log(" ");
 
 
 // 2.3 IF ELSE SWITCH - Activity Seven
+console.log("**2.3 IF ELSE SWITCH - Activity Seven**")
+console.log(" ");
 
+let characterString = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";
+
+let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+let foundVowels = [];
+
+for (let i = 0; i < characterString.length; i++) {
+    for (let x = 0; x < vowels.length; x++) {
+        if (characterString[i] === vowels[x]) {
+            foundVowels.push([i]);
+            break;
+        }
+    }
+}
+
+console.log(`The final vowel in the string of characters is located at index: ${foundVowels[foundVowels.length - 1]}`);
+
+console.log(" ");
+console.log(" ");
 
 // 2.3 IF ELSE SWITCH - Activity Eight
 

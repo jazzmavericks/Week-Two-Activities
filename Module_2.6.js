@@ -60,20 +60,79 @@ console.log(" ");
 
 
 // 2.6 OBJECTS - Part One - Activity Three
-// console.log("**2.6 OBJECTS Part One - Activity Three**")
-// console.log(" ");
+console.log("**2.6 OBJECTS Part One - Activity Three**")
+console.log(" ");
+
+const person2 = {    
+    name: "Mark",    
+    age: 44,    
+    faveTV: ["The Expanse", "Battlestar Galactica", "Better Call Saul", "Andor", "House of the Dragon", "Generation Kill"]};
+
+for (let i = 0; i < person2.faveTV.length; i++) {    
+    console.log(person2.faveTV[i]);
+}
+
+console.log(" ");
+console.log(" ");
 
 
 // 2.6 OBJECTS - Part Two - Activity One
-// console.log("**2.6 OBJECTS - Part Two - Activity One**")
-// console.log(" ");
+console.log("**2.6 OBJECTS - Part Two - Activity One**")
+console.log(" ");
+
+const person3 = {    
+    name: "Mark",    
+    age: 44,    
+    sayHi() {
+        return `Hello! My name is ${this.name}`;
+    }
+}
+
+console.log(person3.sayHi());
+
+console.log(" ");
+console.log(" ");
 
 
 // 2.6 OBJECTS - Part Two - Activity Two
-// console.log("**2.6 OBJECTS - Part Two - Activity Two**")
-// console.log(" ");
+console.log("**2.6 OBJECTS - Part Two - Activity Two**")
+console.log(" ");
+
+const pet = {    
+    name: "Gizmo",   
+    typeOfPet: "Mogwai", 
+    age2: 142, 
+    colour: "White and Brown",   
+    eat() {
+        return `${this.name} is eating`;
+    },
+    drink() {
+        return `${this.name} is drinking`;
+    }
+}
+
+console.log(pet.eat());
+console.log(pet.drink());
+
+console.log(" ");
+console.log(" ");
 
 
 // 2.6 OBJECTS - Part Two - Activity Three
-// console.log("**2.6 OBJECTS - Part Two - Activity Three**")
-// console.log(" ");
+console.log("**2.6 OBJECTS - Part Two - Activity Three**")
+console.log(" ");
+
+const coffeeShop = {
+    branch: "Chester",
+    drinks: [["Latte", 2.75],["Cortado", 3.20],["Cappuccino", 2.90],["Flat White", 2.55],["Mocha", 3.10],["Chai Latte", 4.10]],
+    food: [["Sandwich", 5.75],["Panini", 4.90],["Wrap", 4.25],["Cookie", 1.80],["Crisps", 1.10]],
+    drinksOrdered() {},
+    foodOrdered() {}
+}
+
+console.log(`Thanks for visiting Costa ${coffeeShop.branch}. Your order is: \n `)
+console.log(" ")
+
+for (let i = 0; i < coffeeShop.drinks.length; i++) {
+    console.log(`${coffeeShop.drinks[[i][i]]} \n`);
+    }

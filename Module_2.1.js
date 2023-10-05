@@ -34,8 +34,8 @@ console.log(" ");
 console.log("**2.1 DOT NOTATION - Activity Two Stretch**")
 console.log(" ");
 
-let columns = ["   |   |   ", "   |   |   ", "   |   |   "]
-let rows = ["-----------", "-----------"]
+let columns = [" ", "|", " "]
+let rows = ["-----------"]
 
 for (let i = 0; i< 3; i++){
     console.log(columns[i]);
