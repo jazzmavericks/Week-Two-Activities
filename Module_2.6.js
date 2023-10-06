@@ -2,6 +2,7 @@ console.log(" ");
 // 2.6 OBJECTS - Part One - Activity One
 console.log("**2.6 OBJECTS - Activity One**")
 console.log(" ");
+console.log(" ");
 
 let example = "name";
 
@@ -20,6 +21,7 @@ console.log(" ");
 
 // 2.6 OBJECTS - Part One - Activity Two
 console.log("**2.6 OBJECTS - Part One - Activity Two**")
+console.log(" ");
 console.log(" ");
 
 
@@ -62,6 +64,7 @@ console.log(" ");
 // 2.6 OBJECTS - Part One - Activity Three
 console.log("**2.6 OBJECTS Part One - Activity Three**")
 console.log(" ");
+console.log(" ");
 
 const person2 = {    
     name: "Mark",    
@@ -78,6 +81,7 @@ console.log(" ");
 
 // 2.6 OBJECTS - Part Two - Activity One
 console.log("**2.6 OBJECTS - Part Two - Activity One**")
+console.log(" ");
 console.log(" ");
 
 const person3 = {    
@@ -96,6 +100,7 @@ console.log(" ");
 
 // 2.6 OBJECTS - Part Two - Activity Two
 console.log("**2.6 OBJECTS - Part Two - Activity Two**")
+console.log(" ");
 console.log(" ");
 
 const pet = {    
@@ -121,18 +126,47 @@ console.log(" ");
 // 2.6 OBJECTS - Part Two - Activity Three
 console.log("**2.6 OBJECTS - Part Two - Activity Three**")
 console.log(" ");
+console.log(" ");
 
 const coffeeShop = {
     branch: "Chester",
-    drinks: [["Latte", 2.75],["Cortado", 3.20],["Cappuccino", 2.90],["Flat White", 2.55],["Mocha", 3.10],["Chai Latte", 4.10]],
-    food: [["Sandwich", 5.75],["Panini", 4.90],["Wrap", 4.25],["Cookie", 1.80],["Crisps", 1.10]],
-    drinksOrdered() {},
-    foodOrdered() {}
-}
-
-console.log(`Thanks for visiting Costa ${coffeeShop.branch}. Your order is: \n `)
-console.log(" ")
-
-for (let i = 0; i < coffeeShop.drinks.length; i++) {
-    console.log(`${coffeeShop.drinks[[i][i]]} \n`);
+    drinks: {
+      cappuccino: 3.90,
+      cortado: 3.20,
+      latte: 3.65,
+      tea: 2.90
+    },
+    food: {
+      sandwich: 4.15,
+      panini: 3.95,
+      cookie: 1.80,
+      crisps: 1.20
+    },
+    finalTotal: (order, type) => { // A function to set an array of the products (items) that the customer has ordered, which updates a running total cost looping however many times there are items in the order array. The price is pulled depending on the type of order (food or drink).
+      const items = order;
+      let totalCost = 0;
+  
+      items.forEach((item) => {
+        const price = type[item];
+        totalCost += price;
+      });
+  
+      return totalCost;
     }
+};
+
+// Set the example food and drinks orders
+let drinkOrder = ["cortado", "cappuccino", "tea"];
+let foodOrder = ["cookie", "crisps", "panini"];
+
+// Set the total costs for food and drinks and then a total cost for everything, and output to the console
+let drinksCost = coffeeShop.finalTotal(drinkOrder, coffeeShop.drinks);
+let foodCost = coffeeShop.finalTotal(foodOrder, coffeeShop.food);
+let totalBill = drinksCost + foodCost;
+  
+console.log(`Hi! Thanks for visiting Costa ${coffeeShop.branch}.\n\nYou ordered: ${drinkOrder.join(', ')} and ${foodOrder.join(', ')}.\n\nThe total cost for your order comes to: £${totalBill}.`); // Added in the join function to display the commas correctly in the output
+
+  
+console.log(" ")
+console.log(" ")
+  

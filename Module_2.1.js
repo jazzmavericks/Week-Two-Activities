@@ -34,24 +34,13 @@ console.log(" ");
 console.log("**2.1 DOT NOTATION - Activity Two Stretch**")
 console.log(" ");
 
-let columns = [" ", "|", " "]
-let rows = ["-----------"]
+const columns = [" ", " ", " ", "|", " ", " ", "|", " ", " ", " "];
+const rows = ["----------"];
 
-for (let i = 0; i< 3; i++){
-    console.log(columns[i]);
+// Loop to print rows and separator
+for (let i = 0; i < 3; i++) {
+  console.log(columns.join('')); // Log output to the console with commas removed from display
+  if (i < 2) {
+    console.log(`${rows}`);
+  }
 }
-for (let j = 0; j< 1; j++){
-        console.log(rows[j]);
-}
-for (let i = 0; i< 3; i++){
-    console.log(columns[i]);
-}
-for (let j = 0; j< 1; j++){
-        console.log(rows[j]);
-}
-for (let i = 0; i< 3; i++){
-    console.log(columns[i]);
-}
-
-console.log(" ");
-console.log(" ");

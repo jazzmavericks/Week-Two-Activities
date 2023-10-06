@@ -193,7 +193,44 @@ console.log(`The final vowel in the string of characters is located at index: ${
 console.log(" ");
 console.log(" ");
 
+
 // 2.3 IF ELSE SWITCH - Activity Eight
+console.log("**2.3 IF ELSE SWITCH - Activity Eight**")
+console.log(" ");
+
+let word = "Moomin";
+let firstLetter = word[0];
+let lastLetter = word[word.length - 1];
+
+if (firstLetter === lastLetter) {
+    console.log(`Yay! The first letter of ${word} is the same as the last letter of ${word}!`);
+    return true;
+}
+else {
+    console.log(`Sadly, the first letter of ${word} is NOT the same as the last letter of ${word}!`);
+}
+
+console.log(" ");
+console.log(" ");
 
 
 // 2.3 IF ELSE SWITCH - Activity Nine
+console.log("**2.3 IF ELSE SWITCH - Activity Nine**")
+console.log(" ");
+
+let num1 = 567;
+let num2 = 988;
+let sum = (num1 + num2);
+
+let multiplied = (num1 * num2);
+
+
+if (sum % 2 === 0) {
+    console.log(`The sum of ${num1} and ${num2} is ${sum} - an even number.`);
+}
+else {
+    console.log(`The sum of ${num1} and ${num2} is ${sum} - NOT an even number. Therefore, ${num1} multiplied by ${num2} is ${multiplied}`);
+}
+
+console.log(" ");
+console.log(" ");

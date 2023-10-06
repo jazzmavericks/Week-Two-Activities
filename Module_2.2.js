@@ -55,3 +55,26 @@ console.log(" ");
 
 console.log("**2.1 DOT NOTATION - Activity Four**")
 console.log(" ");
+
+let space1 = 'x';
+let space2 = 'o';
+let space3 = ' ';
+let space4 = 'x';
+let space5 = 'x';
+let space6 = ' ';
+let space7 = 'o';
+let space8 = ' ';
+let space9 = ' ';
+
+let columns = [" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "];
+let rows = ["---------------------"];
+
+console.log(`${columns[0]} ${space1} ${columns[2]} ${columns[3]} ${columns[4]} ${space2} ${columns[6]}  ${columns[7]} ${columns[8]} ${columns[9]} ${columns[10]}`);
+console.log(`${rows}`);
+console.log(`${columns[0]} ${space4} ${columns[2]} ${columns[3]} ${columns[4]} ${space5} ${columns[6]}  ${columns[7]} ${columns[8]} ${columns[9]} ${columns[10]}`);
+console.log(`${rows}`);
+console.log(`${columns[0]} ${space7} ${columns[2]} ${columns[3]} ${columns[4]} ${columns[5]} ${columns[6]}  ${columns[7]} ${columns[8]} ${columns[9]} ${columns[10]}`);
+
+
+console.log(" ");
+console.log(" ");
