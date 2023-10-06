@@ -13,12 +13,18 @@ let factorial = (n) => {
   
   console.log(factorial(33));
 
+  console.log(" ");
+  console.log(" ");
+
   // 2.5 FUNCTIONS - Part Two - Activity Two
 console.log("**2.5 Functions - Part Two - Activity Two**");
 console.log(" ");
+console.log(" ");
 
+// Set initial variable 
 let orderCount = 0;
 
+// Create a function to pull in toppings
 const takeOrder = (topping) => {
     for (let i = 0; i < topping.length; i++) {
         console.log(`Pizza with ${topping[i]}`);
@@ -34,9 +40,12 @@ console.log(" ");
 // 2.5 FUNCTIONS - Part Two - Activity Three
 console.log("**2.5 Functions - Part Two - Activity Three**")
 console.log(" ");
+console.log(" ");
 
+// Set initial balance
 let availableFunds = 100;
 
+// Check that the pin is correct
 const checkPin = (pin, amount) => {
     if (pin == 1234) {
         console.log("Pin is correct")
@@ -44,6 +53,7 @@ const checkPin = (pin, amount) => {
     }
 }
 
+// Output successful withdrawal
 const withdrawCash = (amount) => {
     if (checkBalance(amount)) {
         console.log(`£${amount} has been withdrawn. New balance = £${availableFunds}`);
@@ -54,6 +64,7 @@ const withdrawCash = (amount) => {
     }
 }
 
+// Make sure that there is enough money in the account
 const checkBalance = (amount) => {
     if (amount <= availableFunds) {
         return true;

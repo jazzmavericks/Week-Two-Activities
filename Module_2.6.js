@@ -39,11 +39,13 @@ function capitalizeFirstLetter(inputString) {
   
 const capitalizedDay = capitalizeFirstLetter(day);
 
+// set up responses to which alarm notice is required
 const wakeUp = {
     weekendAlarm: "No alarm needed",
     weekdayAlarm: "Get up at 7am",
 };
 
+// New loop to decide which alarm response is needed
 for (let i = 0; i < days.length; i++) {
     if (day == days[i]) {
         if (day == "saturday" || day == "sunday"){

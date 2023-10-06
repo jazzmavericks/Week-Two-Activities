@@ -3,9 +3,11 @@
 console.log("**2.3 IF ELSE SWITCH - Activity One with Stretch**")
 console.log(" ");
 
+// Set test variables
 let age = 18;
 let country = "USA"
 
+// Find out if the variables allow true or false
 if (age < 18 && country == "United Kingdom") {
     console.log ("You aren't old enough")
 }
@@ -27,6 +29,7 @@ console.log(" ");
 
 let ingredient = "Pepperoni";
 
+// Set up a switch with a variety of toppings, and depending if they match the test input, output a response
 switch (ingredient) {
     case "Pepperoni":
     case "Chicken & Peppers":
